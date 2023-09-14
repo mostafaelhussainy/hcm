@@ -1,0 +1,16 @@
+@import "./assets/styles/scss/helper";
+#dashboard-controller {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 4%;
+}
+.VictoryContainer{
+    height: fit-content !important;
+    width: fit-content !important;
+}
+.container{
+    padding-bottom: 10em;
+  
+  }

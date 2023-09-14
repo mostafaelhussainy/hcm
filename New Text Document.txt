@@ -1,0 +1,1 @@
+icacls "E:\Mostafa\dashboard\HcmsCoreReact\API\hcms-react" /grant mostafa:(OI)(CI)F /T

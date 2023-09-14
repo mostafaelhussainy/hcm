@@ -1,0 +1,52 @@
+@import '../../assets/styles/scss/helper';
+
+#side-menu {
+    // reset
+    .MuiButtonBase-root,
+    .MuiAccordionSummary-content.Mui-expanded,
+    .MuiButtonBase-root-MuiAccordionSummary-root,
+    .MuiAccordionDetails-root,
+    .MuiAccordionSummary-content {
+        padding: 0;
+        margin: 0;
+        min-height: unset;
+    }
+    .MuiPaper-root:before {
+        background-color: unset !important;
+    }
+    .MuiBox-root {
+        padding: 20px 14px 0 10px;
+    }
+    & > .MuiPaper-root {
+        .menu-item {
+            font-family: "Poppins", sans-serif;
+            box-shadow: none !important;
+            min-height: 34px;
+            width: 98%;
+            display: block;
+            margin-bottom: 2px;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 32px;
+            -webkit-font-smoothing: antialiased;
+            cursor: pointer;
+            &:hover {
+                color: #009fe3;
+            }
+        }   
+        .MuiButtonBase-root:hover svg path {
+            fill: #009fe3;
+        }
+        .MuiPaper-root {
+            margin: 0;
+            min-height: unset;
+            box-shadow: none !important;
+            .MuiCollapse-root {
+                padding-left: 14px;
+                .menu-link {
+                    font-size: 12px;
+                }
+            }
+        }
+    }   
+}

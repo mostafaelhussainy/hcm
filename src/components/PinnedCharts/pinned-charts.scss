@@ -1,0 +1,93 @@
+#pinned-charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 1%;
+
+    .chart {
+        width: 49%;
+        // min-height: 400px;
+        &:not(:has(.create-chart__btn)) {
+            // height: 450px;
+            height: 475px;
+            border-radius: 8px;
+            background: #fff;
+            padding: 8px 33px 15px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            margin-bottom: 10px;
+            position: relative;
+
+            .overlay {
+                background: rgb(255 255 255 / 50%);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                text-align: center;
+                padding-top: 25%;
+            }
+        }
+
+        .create-chart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 100%;
+            min-height: 475px;
+            cursor: pointer;
+            &__btn {
+                color: #ababab;
+                font-family: Ubuntu;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+
+            &:hover {
+                border: 2px dashed #ababab;
+                border-radius: 8px;
+                cursor: pointer;
+
+                .create-chart__btn {
+                    opacity: 0;
+                }
+
+                .create-chart__icon {
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        height: 40%;
+                        border-left: 2px dashed #ababab;
+                        cursor: pointer;
+                    }
+
+                    &::after {
+                        cursor: pointer;
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translateX(-50%);
+                        width: 40%;
+                        border-bottom: 2px dashed #ababab;
+                    }
+                }
+            }
+        }
+    }
+}

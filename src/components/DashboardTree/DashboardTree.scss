@@ -1,0 +1,68 @@
+﻿.displayNone{
+    display:none;
+}
+.locTreeBtn {
+    z-index: 1000;
+    position: fixed;
+    top: 13%;
+    left: 0;
+    background-color: #96d3c6;
+    padding: 15px;
+    color: #fff;
+    border-radius: 34px;
+    border-bottom-left-radius: 0;
+
+    svg {
+        vertical-align: middle;
+        margin: 0px 5px;
+
+        path {
+            color: #fff;
+        }
+    }
+
+    &.opend {
+        /*   background-color: #fff;
+        color: #333;*/
+        /*border-radius: 34px;
+        border-bottom-right-radius: 0;*/
+        color: #333;
+
+        svg {
+            path {
+                color: #333;
+            }
+        }
+    }
+}
+#treeDrawer {
+    background-color: #fff;
+    border-radius: 4px;
+    position: fixed;
+    top: 20%;
+    left: 0px;
+    height: 470px;
+    max-height: 500px;
+    overflow-y: auto;
+    transition: all 0.5s;
+
+    &.closed {
+        width: 0px;
+        padding: 0;
+    }
+
+    &.opend {
+        width: 420px;
+        padding: 10px;
+        padding-top: 20px;
+        box-shadow: 0px 2px 14px 0px rgb(46, 46, 46);
+        padding-bottom: 0 !important;
+    }
+
+    .btn {
+        margin-top: 15px !important;
+    }
+}
+/*tspan {
+    font-size: 43px !important;
+}*/

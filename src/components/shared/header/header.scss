@@ -1,0 +1,89 @@
+@import "../../../assets/styles/scss/helper";
+
+#HCMS-header {
+    margin-bottom: 15px;
+    button:has(.profileIcon) {
+        padding: 0;
+        svg {
+            margin-right: 10px;
+            display: block;
+        }
+    }
+
+    .profileIcon {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    header {
+        background-color: #0e0f38 !important;
+
+        .MuiToolbar-root {
+            padding: 0 10px !important;
+            min-height: 50px !important;
+
+            #open-side-menu-btn {
+                padding-right: 0;
+            }
+            #open-side-menu-btn svg,
+            #more-icon,
+            .profileIcon {
+                path {
+                    fill: #fff;
+                }
+            }
+
+            #header--logo {
+                display: block;
+                margin-right: 35px;
+                align-self: center;
+                img {
+                    display: block;
+                    max-width: 34px;
+                    height: auto;
+                }
+            }
+
+            h1 {
+                font-size: 28px;
+                font-weight: 500;
+                padding-left: 7px;
+                border-left: 3px solid white;
+                margin-left: 5px;
+                color: white;
+                font-family: "Poppins", sans-serif;
+                span {
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: white;
+                    margin-left: 5px;
+                    font-family: "Poppins", sans-serif;
+                }
+                @include respond-to(sm) {
+                    font-size: 18px;
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .MuiBox-root,
+            .MuiBox-root .MuiButtonBase-root {
+                padding: 0;
+            }
+            .MuiBox-root:has(button) {
+                width: fit-content !important;
+                padding-right: 20px;
+                .MuiAvatar-circular {
+                    margin-right: 20px;
+                }
+                .MuiTypography-root {
+                    color: #fff;
+                    font-family: "Ubuntu";
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}

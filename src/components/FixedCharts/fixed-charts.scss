@@ -1,0 +1,97 @@
+@import "../../assets/styles/scss/helper";
+
+#fixed-charts {
+    margin-bottom: 15px;
+    @include grid-layout(3, 20px);
+    #avg-age-tenure-chart {
+        .fixed-chart__figure.col {
+            column-gap: 10px;
+        }
+        figcaption {
+            display: flex;
+            flex-direction: column;
+        }
+        h3,
+        span {
+            text-align: left;
+        }
+    }
+    .fixed-chart {
+        border-radius: 8px;
+        background: #fff;
+        padding: 8px 30px 15px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        h3 {
+            color: #656565;
+            font-family: Ubuntu;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 10px;
+            text-align: end;
+        }
+
+        &__row {
+            @include flex(space-between, center, row);
+            width: 100%;
+        }
+
+        &__figure figcaption,
+        &__status span {
+            color: #172435;
+            font-family: Ubuntu;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-align: end;
+        }
+
+        &__figure figcaption {
+            font-size: 16px;
+            margin: 0 8px;
+        }
+
+        &__figure {
+            .head-count-img {
+                /*  width: 66px;
+                height: 49px;*/
+                width: 70px;
+                height: 70px;
+                color: #0e0f38;
+            }
+
+            .avg-age-tenure-img {
+                width: 50px;
+                height: 50px;
+                color: #0e0f38;
+            }
+
+            .turn-over__figure {
+                width: 70px;
+                height: 70px;
+                color: #0e0f38;
+                transform: rotate(134deg);
+            }
+        }
+
+        &__figure.col {
+            @include flex(center, center, row, unset, 5px);
+        }
+
+        &__row.turn-over-chart {
+            /*           max-width: 160px;
+            margin: 0 auto;*/
+
+            .fixed-chart__figure.row {
+                @include flex(space-between, center, row, 5px);
+                width: 100%;
+            }
+        }
+    }
+}

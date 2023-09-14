@@ -1,0 +1,213 @@
+@font-face {
+    font-family: Comfortaa;
+    src: url("../../../fonts/Comfortaa-VariableFont_wght.ttf");
+}
+:root {
+    font-family: Comfortaa !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+span,
+select,
+button {
+    font-family: Comfortaa !important;
+}
+.VictoryContainer svg:first-child {
+    overflow: visible;
+}
+.dashboard.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.dashboard {
+    width: 48%;
+    min-height: 400px;
+
+    &__btn {
+        color: #ababab;
+        font-family: Ubuntu;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    &:hover {
+        border: 2px dashed #ababab;
+        border-radius: 8px;
+
+        .dashboard__btn {
+            opacity: 0;
+        }
+
+        .dashboard__icon {
+            width: 100%;
+            height: 100%;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 40%;
+                border-left: 2px dashed #ababab;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%);
+                width: 40%;
+                border-bottom: 2px dashed #ababab;
+            }
+        }
+    }
+}
+.btn {
+    border: 0 !important;
+    border-radius: 20px !important;
+    text-transform: capitalize !important;
+
+    &.succeseBtn {
+        background: #97d5c8 !important;
+        color: #34445b !important;
+        border: 1px solid #97d5c8 !important;
+
+        &:hover {
+            background-color: white !important;
+            color: #97d5c8 !important;
+        }
+    }
+
+    &.errorBtn {
+        background: #8e2b2e !important;
+        color: white !important;
+
+        &:hover {
+            background-color: white !important;
+            border: 1px solid #8e2b2e !important;
+            color: #8e2b2e !important;
+        }
+    }
+}
+.Mui-checked {
+    color: #96d3c6 !important;
+}
+li[class^="MuiTreeItem-root"],
+div[class*="MuiTreeItem-root"] {
+    border-left: 1px dashed #b0afaf;
+}
+[class^="MuiSwitch-track"] {
+    background-color: #96d3c6 !important;
+}
+.preview-popup__control__column {
+    button {
+        border: 1px solid #e0e0e0;
+        min-width: 45px;
+        padding: 5px;
+        margin: 5px;
+        box-shadow: 0px 0px 3px 1px rgb(209 209 209);
+        color: rgb(14 15 56);
+        img {
+            mix-blend-mode: luminosity;
+        }
+    }
+    .unpin {
+        color: #fd3838cc;
+    }
+}
+.preview-popup-flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.pieChart {
+    display: flex;
+    justify-content: center;
+
+    .pieLegend {
+        /*  border: 1px solid #dddddd;*/
+        width: 250px;
+        border-radius: 5px;
+        padding: 5px 8px;
+
+        .legendItems {
+            overflow: auto;
+            max-height: 300px;
+        }
+
+        span {
+            height: 15px;
+            width: 15px;
+            display: inline-block;
+            border-radius: 100%;
+            margin: 0 7px;
+        }
+
+        p {
+            margin: 8px 0;
+            font-size: 14px !important;
+
+            &.legendTitle {
+                font-size: 16px !important;
+                margin-bottom: 5px;
+            }
+        }
+
+        .tooltip {
+            position: relative;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #f5f4f4;
+            color: #666a6c;
+            text-align: center;
+            border: 1px solid #a3a3a3;
+            border-radius: 12px;
+            padding: 7px 0 !important;
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: 50%;
+            margin: 0 !important;
+            margin-left: -60px !important;
+            top: 96%;
+            height: -moz-fit-content;
+            height: fit-content;
+            display: inline-block;
+            font-size: 12px;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+    }
+    .pieChart .pieLegend span.tooltiptext {
+        display: none;
+    }
+}
+[id^="chart-axis-1"] .tspan {
+    fill: red;
+}
+
+.preview-popup .chartBody .VictoryContainer > div {
+    display: none;
+}

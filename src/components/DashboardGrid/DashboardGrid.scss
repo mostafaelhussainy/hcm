@@ -1,0 +1,13 @@
+﻿.disabledCont{
+    * {
+        cursor: not-allowed !important;
+        color: #b2b0b0;
+    } 
+}
+.MuiTablePagination-select,.MuiTablePagination-selectLabel,.css-16c50h-MuiInputBase-root-MuiTablePagination-select{
+    display:none !important;
+}
+.showHideTablesDialogContent{
+    display:flex;
+    flex-wrap:wrap;
+}

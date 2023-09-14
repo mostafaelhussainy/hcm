@@ -1,0 +1,103 @@
+@import "../../assets/styles/scss/helper";
+
+#preview-popup {
+    .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded {
+        height: calc(100% - 25px);
+    }
+    .MuiDialogContent-root.MuiDialogContent-dividers {
+        padding: 17px 40px;
+    }
+    .preview-popup {
+        position: relative;
+        padding-top: 95px;
+        min-width: 1000px;
+        // min-height: 800px;
+        .preview-popup-flex {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            right: 20px;
+            top: 0;
+            width: 95%;
+        }
+
+        &__filters {
+            height: fit-content;
+            max-width: 100%;
+            flex-wrap: wrap;
+            row-gap: 15px;
+            column-gap: 10px;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .MuiChip-filled {
+                svg {
+                    path {
+                        fill: #00000027;
+                    }
+
+                    &:hover {
+                        path {
+                            fill: #00000080;
+                        }
+                    }
+                }
+            }
+
+            span {
+                margin-left: 0;
+            }
+        }
+
+        &__control {
+            position: relative;
+            z-index: 500;
+
+            &__switch {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin-left: auto;
+                margin-right: 20px;
+                &__state {
+                    color: #4d4d4d;
+                    font-family: "Ubuntu";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                &__state.active {
+                    color: #247096;
+                    font-size: 20px;
+                }
+            }
+
+            &__column {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+
+            button {
+                min-width: unset !important;
+
+                svg path {
+                    fill: #247096;
+                }
+            }
+        }
+    }
+
+    .MuiDialogActions-root {
+        padding: 20px 10px !important;
+    }
+
+    .VictoryContainer {
+        width: fit-content !important;
+        margin: 0 auto;
+        // height: 600px !important;
+        max-height: 650px !important;
+    }
+}

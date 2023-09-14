@@ -1,0 +1,151 @@
+#date-popup {
+    .MuiPaper-root {
+
+        min-width: 800px;
+        min-height: 400px;
+        overflow: hidden;
+        .wrapper {
+            display: flex;
+            align-items: flex-start;
+            column-gap: 60px;
+            label {
+                color: #536973;
+                font-family: "Ubuntu";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;  
+            }
+            .col {
+                .switch {
+                    display: flex;
+                    column-gap: 10px;
+                    align-items: center;
+                    margin-bottom: 30px;
+                    span {
+                        color: #536973;
+                        font-family: "Ubuntu";
+                        font-size: 17px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                    span.active {
+                        color: #536973;
+                        font-family: "Ubuntu";
+                        font-size: 17px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                }
+                .switch-row {
+                    display: flex;
+                    column-gap: 4%;
+                    .MuiFormControl-root {
+                        width: 48% !important;
+                    }
+                    span {
+                        color: #536973;
+                        font-family: "Ubuntu";
+                        font-size: 17px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        white-space: nowrap;
+                    }
+                }
+                .react-datepicker {
+                    min-width: 240px;
+                }
+                .react-datepicker__input-container {
+                    input {
+                        width: 116px;
+                        border: 1px solid #d9d9d9;
+                        padding: 5px 30px 5px 10px;
+                        color: #7b919b;
+                        font-family: Ubuntu;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        text-align: center;
+                        display: block;
+                        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none"><path d="M7.96875 14.7396C7.67361 14.7396 7.42622 14.6398 7.22656 14.4401C7.02691 14.2404 6.92708 13.993 6.92708 13.6979C6.92708 13.4028 7.02691 13.1554 7.22656 12.9557C7.42622 12.7561 7.67361 12.6562 7.96875 12.6562C8.26389 12.6562 8.51128 12.7561 8.71094 12.9557C8.91059 13.1554 9.01042 13.4028 9.01042 13.6979C9.01042 13.993 8.91059 14.2404 8.71094 14.4401C8.51128 14.6398 8.26389 14.7396 7.96875 14.7396ZM12.5781 14.7396C12.283 14.7396 12.0356 14.6398 11.8359 14.4401C11.6363 14.2404 11.5365 13.993 11.5365 13.6979C11.5365 13.4028 11.6363 13.1554 11.8359 12.9557C12.0356 12.7561 12.283 12.6562 12.5781 12.6562C12.8733 12.6562 13.1207 12.7561 13.3203 12.9557C13.52 13.1554 13.6198 13.4028 13.6198 13.6979C13.6198 13.993 13.52 14.2404 13.3203 14.4401C13.1207 14.6398 12.8733 14.7396 12.5781 14.7396ZM17.0052 14.7396C16.7101 14.7396 16.4627 14.6398 16.263 14.4401C16.0634 14.2404 15.9635 13.993 15.9635 13.6979C15.9635 13.4028 16.0634 13.1554 16.263 12.9557C16.4627 12.7561 16.7101 12.6562 17.0052 12.6562C17.3003 12.6562 17.5477 12.7561 17.7474 12.9557C17.947 13.1554 18.0469 13.4028 18.0469 13.6979C18.0469 13.993 17.947 14.2404 17.7474 14.4401C17.5477 14.6398 17.3003 14.7396 17.0052 14.7396ZM4.6875 22.9167C4.27083 22.9167 3.90625 22.7604 3.59375 22.4479C3.28125 22.1354 3.125 21.7708 3.125 21.3542V5.20833C3.125 4.79166 3.28125 4.42708 3.59375 4.11458C3.90625 3.80208 4.27083 3.64583 4.6875 3.64583H6.38021V2.08333H8.07292V3.64583H16.9271V2.08333H18.6198V3.64583H20.3125C20.7292 3.64583 21.0938 3.80208 21.4062 4.11458C21.7188 4.42708 21.875 4.79166 21.875 5.20833V21.3542C21.875 21.7708 21.7188 22.1354 21.4062 22.4479C21.0938 22.7604 20.7292 22.9167 20.3125 22.9167H4.6875ZM4.6875 21.3542H20.3125V10.1562H4.6875V21.3542ZM4.6875 8.59374H20.3125V5.20833H4.6875V8.59374Z" fill="%237B919B"/></svg>');
+                        background-repeat: no-repeat;
+                        background-size: 20px 20px;
+                        background-position-x: 90px;
+                        background-position-y: 2px;
+                    }
+                }
+                .react-datepicker__month-container {
+                    width: 100%;
+                }
+                .react-datepicker__year-wrapper {
+                    display: flex;
+                    flex-wrap: wrap;
+                    max-width: unset;
+                }
+                .react-datepicker__tab-loop {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+                .date-range {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    display: flex;
+                    column-gap: 10px;
+                    .react-datepicker__input-container {
+                        input {
+                            width: 116px;
+                            border: 1px solid #d9d9d9;
+                            padding: 5px 30px 5px 10px;
+                            color: #7b919b;
+                            font-family: Ubuntu;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            text-align: center;
+                            display: block;
+                            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none"><path d="M7.96875 14.7396C7.67361 14.7396 7.42622 14.6398 7.22656 14.4401C7.02691 14.2404 6.92708 13.993 6.92708 13.6979C6.92708 13.4028 7.02691 13.1554 7.22656 12.9557C7.42622 12.7561 7.67361 12.6562 7.96875 12.6562C8.26389 12.6562 8.51128 12.7561 8.71094 12.9557C8.91059 13.1554 9.01042 13.4028 9.01042 13.6979C9.01042 13.993 8.91059 14.2404 8.71094 14.4401C8.51128 14.6398 8.26389 14.7396 7.96875 14.7396ZM12.5781 14.7396C12.283 14.7396 12.0356 14.6398 11.8359 14.4401C11.6363 14.2404 11.5365 13.993 11.5365 13.6979C11.5365 13.4028 11.6363 13.1554 11.8359 12.9557C12.0356 12.7561 12.283 12.6562 12.5781 12.6562C12.8733 12.6562 13.1207 12.7561 13.3203 12.9557C13.52 13.1554 13.6198 13.4028 13.6198 13.6979C13.6198 13.993 13.52 14.2404 13.3203 14.4401C13.1207 14.6398 12.8733 14.7396 12.5781 14.7396ZM17.0052 14.7396C16.7101 14.7396 16.4627 14.6398 16.263 14.4401C16.0634 14.2404 15.9635 13.993 15.9635 13.6979C15.9635 13.4028 16.0634 13.1554 16.263 12.9557C16.4627 12.7561 16.7101 12.6562 17.0052 12.6562C17.3003 12.6562 17.5477 12.7561 17.7474 12.9557C17.947 13.1554 18.0469 13.4028 18.0469 13.6979C18.0469 13.993 17.947 14.2404 17.7474 14.4401C17.5477 14.6398 17.3003 14.7396 17.0052 14.7396ZM4.6875 22.9167C4.27083 22.9167 3.90625 22.7604 3.59375 22.4479C3.28125 22.1354 3.125 21.7708 3.125 21.3542V5.20833C3.125 4.79166 3.28125 4.42708 3.59375 4.11458C3.90625 3.80208 4.27083 3.64583 4.6875 3.64583H6.38021V2.08333H8.07292V3.64583H16.9271V2.08333H18.6198V3.64583H20.3125C20.7292 3.64583 21.0938 3.80208 21.4062 4.11458C21.7188 4.42708 21.875 4.79166 21.875 5.20833V21.3542C21.875 21.7708 21.7188 22.1354 21.4062 22.4479C21.0938 22.7604 20.7292 22.9167 20.3125 22.9167H4.6875ZM4.6875 21.3542H20.3125V10.1562H4.6875V21.3542ZM4.6875 8.59374H20.3125V5.20833H4.6875V8.59374Z" fill="%237B919B"/></svg>');
+                            background-repeat: no-repeat;
+                            background-size: 20px 20px;
+                            background-position-x: 90px;
+                            background-position-y: 2px;
+                        }
+                    }
+                    .react-datepicker__tab-loop {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#date-filter-btn {
+    margin: 0 36em 20px auto;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    padding: 10px 15px;
+    color: #536973;
+    font-family: "Ubuntu";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    border-color: #536973;
+    width: 350px;
+    svg path {
+        fill: #536973;
+    }
+}

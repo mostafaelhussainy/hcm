@@ -1,0 +1,23 @@
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.none,
+.hidden {
+  display: none !important;
+}
+
+.disabled {
+  pointer-events: none;
+}

@@ -1,0 +1,57 @@
+.dashboard.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.dashboard {
+    width: 48%;
+    min-height: 400px;
+
+    &__btn {
+        color: #ababab;
+        font-family: Ubuntu;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    &:hover {
+        border: 2px dashed #ababab;
+        border-radius: 8px;
+
+        .dashboard__btn {
+            opacity: 0;
+        }
+
+        .dashboard__icon {
+            width: 100%;
+            height: 100%;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 40%;
+                border-left: 2px dashed #ababab;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%);
+                width: 40%;
+                border-bottom: 2px dashed #ababab;
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.skeleton-bar-chart-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .MuiSkeleton-root {
+        // transform: rotate(90deg);
+    }
+}
